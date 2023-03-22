@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #FFF;
+    /* background: #FFF; */
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -50,6 +50,9 @@ a:hover {
 
 .bloc-md {
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
 }
 
 .bloc-sm {
@@ -66,10 +69,10 @@ a:hover {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
-    -webkit-background-size: auto!important;
-    -moz-background-size: auto!important;
-    -o-background-size: auto!important;
-    background-size: auto!important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .bg-repeat {
@@ -91,8 +94,12 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+        ),url("img/texture-paper.png");
     background-size: 280px 280px;
+    
 }
 
 .b-parallax {
@@ -133,7 +140,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(0, 0, 0, .5);
 }
 
 .d-bloc .a-btn:hover,
@@ -150,7 +157,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -266,6 +273,9 @@ a:hover {
 
 .voffset {
     margin-top: 30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .voffset-lg {
@@ -330,6 +340,7 @@ a:hover {
 
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
+    
 }
 
 .nav > li a:hover,
@@ -529,6 +540,26 @@ button {
     font-size: 14px;
     opacity: 1;
 }
+.quote-align{
+    width:612px;
+    margin-left:0px;
+}
+.title-size{
+    width: 612px ;
+    margin:auto;
+    margin-bottom:30px ;
+}
+
+.portfolio-align{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-align p{
+    padding-bottom: 25px;
+}
 
 a[data-lightbox] {
     position: relative;
@@ -649,9 +680,18 @@ p,
 label,
 .btn,
 a {
-    font-family: "helvetica";
+    font-family: 'Tahoma', 'Trebuchet MS', "Microsoft sans serif", "Optima", sans-serif;
     font-weight: 400;
-    color: #575757!important;
+    color: #575757;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: 'Trebuchet MS';
+}
+
+strong{
+    font-weight: normal;
 }
 
 .container {
@@ -677,7 +717,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 18px;
 }
 
 .tight-width-whitespace {
@@ -685,14 +725,11 @@ p {
     margin: auto auto auto auto;
 }
 
-.h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
-}
+
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    /* color: #FFFFFF!important; */
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -705,12 +742,12 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 23px;
     line-height: 1.4em;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -722,14 +759,40 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
+/* h1 {
     color: #333333!important;
+} */
+
+.col-sm-12 {
+    background-color: transparent;
+}
+
+#bloc-5-cta h2 {
+color:#F3976C;
+
 }
 
 h4 {
     color: #333333!important;
 }
 
+.missions{
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0px;
+    font-size: 18px;
+}
+
+.link-center{
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.advise{
+    font-size:18px;
+}
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
@@ -737,6 +800,16 @@ h4 {
 
 .white {
     color: #FFFFFF!important;
+}
+
+.black{
+    color:black;
+}
+
+.big-img{
+    width:320px;
+    height: 320px;
+
 }
 
 .portfolio-thumb {
@@ -780,12 +853,13 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color:black;
+    /* color: #FFFFFF!important; */
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
+    /* color: #FFFFFF!important; */
 }
 
 .ltc-white {
@@ -818,7 +892,8 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+
+    background-image:  url("img/agence-la-panthere.jpg");
 }
 
 .bg-presentation {
