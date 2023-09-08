@@ -350,6 +350,7 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+    text-decoration: underline;
 }
 
 .navbar-toggle {
@@ -900,11 +901,11 @@ h4 {
 
 .bg-banniere {
 
-    background-image:  url("img/agence-la-panthere.jpg");
+    background-image:  url("img/agence-la-panthere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.jpg");
+    background-image: url("img/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
