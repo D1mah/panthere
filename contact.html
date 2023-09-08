@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+	<link rel="stylesheet" href="text/css" href="./css/adjustment.css">
 	
     
 	<script src="./js/jquery-2.1.0.js"></script>
@@ -36,24 +37,24 @@
 				
 				<div class="navbar-header">
 					
-					<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="Logo représentant une tête de panthère" height="40" /></a>
+					<a class="navbar-brand" href="index.html" tabindex="0" ><img src="img/agence-la-panthere-monochrome.svg" alt="Logo représentant une tête de panthère" height="40" /></a>
 					
-					<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<!-- <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-					</button>
+					</button> -->
 				
 				</div>
 	
 				<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 					<ul class="site-navigation nav navbar-nav">
 						<li>
-							<a href="index.html">Accueil</a>
+							<a href="index.html" tabindex="1">Accueil</a>
 						</li>
 						<li>
-							<a href="contact.html">Contact</a>
+							<a href="contact.html" tabindex="2">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -95,33 +96,33 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1" methode='POST' novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					
 					<div class="form-group">
 						<label for="name">
 							Nom
 						</label>
-						<input id="name" class="form-control" name="name" type= "name" required="">
+						<input id="name" class="form-control" name="name" type= "name" required>
 					</div>
 					
 					<div class="form-group">
 						<label for="email">
 							Adresse email
 						</label >
-						<input id="email" class="form-control" name="email" type="email" required="" autofocus="" aria-invalid="false">
+						<input id="email" class="form-control" name="email" type="email" required  pattern="*@-.-" autofocus="" aria-invalid="false">
 					</div>
 					
 					<div class="form-group">
 						<label for="input_504">
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="email" required="" id="input_504">
+						<input class="form-control" type="email" required id="input_504">
 					</div>
 					
 					<div class="form-group">
 						<label for="message">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required=""></textarea>
+						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
 					
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
