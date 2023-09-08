@@ -101,7 +101,7 @@ a:hover {
     background: linear-gradient(
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.5)
-        ),url("img/texture-paper.png");
+        ),url("img/texture-paper.webp");
     background-size: 280px 280px;
     
 }
@@ -492,6 +492,8 @@ button {
 
 .icon-md {
     font-size: 30px!important;
+    width:48px;
+    height:48px;
 }
 
 .icon-lg {
@@ -902,7 +904,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
