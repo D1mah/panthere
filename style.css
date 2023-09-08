@@ -315,6 +315,10 @@ a:hover {
     line-height: 44px;
 }
 
+.navbar-brand:focus{
+    border:4px dashed darkorange;
+}
+
 .navbar-brand img {
     max-height: 200px;
     margin: 0 5px 0 0;
@@ -347,10 +351,12 @@ a:hover {
     
 }
 
-.nav > li a:hover,
+.nav > li a:hover{
+    text-decoration: underline darkorange;
+}
 .nav > li a:focus {
     background: transparent;
-    text-decoration: underline;
+    border:4px dashed darkorange;
 }
 
 .navbar-toggle {
@@ -469,11 +475,15 @@ nav .caret {
     margin: 0 0 5px 5px;
 }
 
-.btn-d,
-.btn-d:hover,
+/* .btn-d, */
+.btn-d:hover{
+        background: rgba(0, 0, 0, .3);
+
+}
 .btn-d:focus {
-    color: #FFF;
-    background: rgba(0, 0, 0, .3);
+    /* color: #FFF; */
+    border:4px dashed black;
+    
 }
 
 button {
@@ -748,6 +758,10 @@ p {
     margin: auto auto auto auto;
 }
 
+.social-icon:focus{
+    border:4px dashed black;
+}
+
 h2 {
     font-size: 24px;
     line-height: 1.4em;
@@ -841,6 +855,13 @@ h4 {
 .bold-link {
     font-weight: 900;
     text-decoration: underline!important;
+}
+.bold-link:focus{
+    border:4px dashed darkorange;
+}
+
+.portfolio-focus:focus{
+    border:4px dashed darkorange;
 }
 
 .bgc-white {
