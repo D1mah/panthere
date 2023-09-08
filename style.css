@@ -27,6 +27,10 @@ a:hover {
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
+#bloc-2-services{
+    color:rgb(50,50,50);
+}
+
 .bloc {
     width: 100%;
     clear: both;
@@ -792,6 +796,7 @@ h4 {
 
 .advise{
     font-size:18px;
+    color:rgb(89, 89, 89);
 }
 .icons {
     margin-bottom: 14px;
