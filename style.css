@@ -790,7 +790,7 @@ h3 {
 
 #bloc-5-cta h2 {
 color:#F3976C;
-
+background-color: transparent;
 }
 
 h4 {
@@ -829,8 +829,8 @@ h4 {
 }
 
 .big-img{
-    width:320px;
-    height: 320px;
+    width:270px;
+    height: 270px;
 
 }
 
@@ -916,9 +916,9 @@ h4 {
     background-image: url("img/dots-bg.png");
 }
 
-.bg-lines-h2-bg {
+/* .bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
-}
+} */
 
 .bg-banniere {
 
