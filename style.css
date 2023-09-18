@@ -359,6 +359,10 @@ a:hover {
     border:4px dashed darkorange;
 }
 
+.nav >li a:active{
+    border:none;
+}
+
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
