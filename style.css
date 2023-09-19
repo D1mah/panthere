@@ -429,7 +429,7 @@ a:hover {
         margin-top: 20px;
     }
     .nav-center.mini-nav .navbar-toggle {
-        float: none;
+        float: right;
         margin: 10px auto 0;
     }
 }
@@ -1084,7 +1084,7 @@ h4 {
         width: 100%;
     }
     .nav-invert .navbar-toggle {
-        float: left;
+        float: none;
         margin-left: 10px;
     }
     .bloc {
