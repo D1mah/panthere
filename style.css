@@ -389,6 +389,11 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+    
+    .title-size{
+        width: 612px;
+    }
+
     .site-navigation {
         position: absolute;
         top: 50%;
@@ -566,7 +571,7 @@ button {
     margin-left:0px;
 }
 .title-size{
-    width: 612px ;
+    width:100%;
     margin:auto;
     margin-bottom:30px ;
 }
