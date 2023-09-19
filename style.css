@@ -7,6 +7,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+blockquote{
+    width:100%;
+}
+
+blockquote p{
+    width:100%;
+}
 a,
 button {
     transition: all .3s ease-in-out;
@@ -390,6 +397,11 @@ a:hover {
 
 @media (min-width: 768px) {
     
+    .quote-align{
+        width:612px;
+        margin-left:0px;
+    }
+
     .title-size{
         width: 612px;
     }
@@ -567,7 +579,7 @@ button {
     opacity: 1;
 }
 .quote-align{
-    width:612px;
+    width:100%;
     margin-left:0px;
 }
 .title-size{
